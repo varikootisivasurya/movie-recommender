@@ -51,6 +51,10 @@ Only famous items will get reccomended .
 
 <img width="1366" height="706" alt="m" src="https://github.com/user-attachments/assets/426aa3a6-1ef4-40c3-bb08-0b790f94ad52" />
 
+<img width="1366" height="706" alt="m2" src="https://github.com/user-attachments/assets/7563aa2a-41a0-4bb2-9af3-f828cd351f65" />
+
+<img width="1366" height="709" alt="m3" src="https://github.com/user-attachments/assets/6175c179-5374-43a8-8b69-1f77ec00c68b" />
+
 ## Dataset has been used:
 
 

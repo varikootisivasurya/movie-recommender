@@ -60,34 +60,15 @@ Only famous items will get reccomended .
 ### 📊 Dataset Used
 - [TMDB Movie Metadata – Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 
-### 🧠 Concept Behind the Model (`model.pkl`)
-- This project uses **Cosine Similarity**, a metric to measure how similar two vectors (movies) are based on their content.
-1. Cosine Similarity compares vector angles rather than magnitudes.
-2. Movie metadata (like genre, keywords, cast) is converted into **numerical vectors** using techniques like `CountVectorizer`.
-3. The cosine similarity score is computed between movies, resulting in a value between **0 and 1**:
-   - `0` = completely different
-   - `1` = completely similar
+## Concept used to build the model.pkl file : cosine_similarity
+1 . Cosine Similarity is a metric that allows you to measure the similarity of the documents.
 
----
+2 . In order to demonstrate cosine similarity function we need vectors. Here vectors are numpy array.
 
-### 🛠️ How to Run the Project
+3 . Finally, Once we have vectors, We can call cosine_similarity() by passing both vectors. It will calculate the cosine similarity between these two.
 
-#### 📦 Step 1: Clone the Repository
-```bash
-git clone https://github.com/entbappy/Movie-Recommender-System-Using-Machine-Learning.git
-cd Movie-Recommender-System-Using-Machine-Learning
+4 . It will be a value between [0,1]. If it is 0 then both vectors are complete different. But in the place of that if it is 1, It will be completely similar.
 
-#### Step 2: Create & Activate a Conda Environment
-bash
-Copy code
-conda create -n movie python=3.7.10 -y
-conda activate movie
+5 . For more details , check URL : https://www.learndatasci.com/glossary/cosine-similarity/
 
-#### 📥 Step 3: Install Required Dependencies
-bash
-Copy code
-pip install -r requirements.txt
-#### ⚙️ Step 4: Run the Main Script to Generate the Model
-bash
-Copy code
-python app.py
+## 

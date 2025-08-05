@@ -52,4 +52,3 @@ Only famous items will get reccomended .
 <img width="1366" height="706" alt="m" src="https://github.com/user-attachments/assets/426aa3a6-1ef4-40c3-bb08-0b790f94ad52" />
 
 
-New items might not get reccomended at all .

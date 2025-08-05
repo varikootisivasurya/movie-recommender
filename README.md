@@ -36,12 +36,20 @@ Book recommendation , so use cluster mechanism .
 
 We take only one parameter , ratings or comments .
 
-In short, collaborative filtering systems are based on the assumption that if a user likes item A and another user likes the same item A as well as another item, item B, the first user could also be interested in the second item .
+In short, collaborative filtering systems are based on the assumption that if a user likes item A and another user likes the same item A as well as another item, item B, the first user could also be interested in
+the second item .
 
 Issues are :
 
 User-Item nXn matrix , so computationally expensive .
 
 Only famous items will get reccomended .
+
+## About this project:
+
+## Demo
+
+<img width="1366" height="706" alt="m" src="https://github.com/user-attachments/assets/426aa3a6-1ef4-40c3-bb08-0b790f94ad52" />
+
 
 New items might not get reccomended at all .

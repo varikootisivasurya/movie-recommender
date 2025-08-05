@@ -55,31 +55,39 @@ Only famous items will get reccomended .
 
 <img width="1366" height="709" alt="m3" src="https://github.com/user-attachments/assets/6175c179-5374-43a8-8b69-1f77ec00c68b" />
 
-## Dataset has been used:
 
 
-## Concept used to build the model.pkl file : cosine_similarity
+### 📊 Dataset Used
+- [TMDB Movie Metadata – Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 
-1 . Cosine Similarity is a metric that allows you to measure the similarity of the documents.
+### 🧠 Concept Behind the Model (`model.pkl`)
+- This project uses **Cosine Similarity**, a metric to measure how similar two vectors (movies) are based on their content.
+1. Cosine Similarity compares vector angles rather than magnitudes.
+2. Movie metadata (like genre, keywords, cast) is converted into **numerical vectors** using techniques like `CountVectorizer`.
+3. The cosine similarity score is computed between movies, resulting in a value between **0 and 1**:
+   - `0` = completely different
+   - `1` = completely similar
 
-2 . In order to demonstrate cosine similarity function we need vectors. Here vectors are numpy array.
+---
 
-3 . Finally, Once we have vectors, We can call cosine_similarity() by passing both vectors. It will calculate the cosine similarity between these two.
+### 🛠️ How to Run the Project
 
-4 . It will be a value between [0,1]. If it is 0 then both vectors are complete different. But in the place of that if it is 1, It will be completely similar.
-How to run?
-STEPS:
-Clone the repository
+#### 📦 Step 1: Clone the Repository
+```bash
+git clone https://github.com/entbappy/Movie-Recommender-System-Using-Machine-Learning.git
+cd Movie-Recommender-System-Using-Machine-Learning
 
-https://github.com/entbappy/Movie-Recommender-System-Using-Machine-Learning.git
-STEP 01- Create a conda environment after opening the repository
+#### Step 2: Create & Activate a Conda Environment
+bash
+Copy code
 conda create -n movie python=3.7.10 -y
 conda activate movie
-STEP 02- install the requirements
+
+#### 📥 Step 3: Install Required Dependencies
+bash
+Copy code
 pip install -r requirements.txt
-#run this file to generate the models
-
-Movie Recommender System Data Analysis.ipynb
-Now run,
-
-streamlit run app.py
+#### ⚙️ Step 4: Run the Main Script to Generate the Model
+bash
+Copy code
+python app.py

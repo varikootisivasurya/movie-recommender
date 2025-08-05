@@ -77,6 +77,8 @@ Only famous items will get reccomended .
 ## STEPS:
 Clone the repository
 
+https://github.com/varikootisivasurya/movie-recommender
+
 ## STEP 01- Create a conda environment after opening the repository
 
 conda create -n movie python=3.7.10 -y
